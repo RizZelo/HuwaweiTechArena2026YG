@@ -1,0 +1,22 @@
+# Tested with Python 3.13 on Windows 11. Install with:  pip install -r requirements.txt
+#
+# PyTorch: this installs the default build. For an NVIDIA GPU, install the CUDA build first, following
+# https://pytorch.org/get-started/locally/  (the project ran on torch 2.14 with CUDA 13 on an RTX 2050).
+# Without a GPU everything still runs on the CPU (models.DEVICE falls back to "cpu").
+
+# data loading and numerical code
+numpy>=2,<3
+pandas>=2.2,<4
+scipy>=1.13,<2
+scikit-learn>=1.5,<2
+blosc2>=4.14.1,<5
+
+# deep learning and ONNX export / checks
+torch>=2.9,<3
+onnx>=1.16,<2
+onnxruntime>=1.20,<2
+onnxscript>=0.5,<1
+
+# notebooks and plots
+matplotlib>=3.8,<4
+jupyter>=1.0,<2
